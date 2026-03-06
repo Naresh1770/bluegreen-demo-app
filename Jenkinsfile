@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git url: ''
+                git url: 'https://github.com/Naresh1770/bluegreen-demo-app.git'
             }
         }
         stage('Install Dependecies'){
