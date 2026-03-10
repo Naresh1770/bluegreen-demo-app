@@ -20,7 +20,7 @@ pipeline{
         }
         stage('Docker Image build'){
             steps{
-                sh 'docker build -t image_demo:v1 .'
+                sh 'DOCKER_BUILDKIT=0 docker build -t image_demo:v1 .'
             }
         }
         stage('Docker Green'){
